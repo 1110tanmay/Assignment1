@@ -1,44 +1,44 @@
-public class heapsort {
-    static void heapify(int[] arr, int n, int i) {
+public class HeapSort {
+    static void heapify(int[] array, int n, int i) {
         int largest = i; 
         int left = 2 * i + 1; 
         int right = 2 * i + 2; 
 
-        if (left < n && arr[left] > arr[largest]) {
+        if (left < n && array[left] > array[largest]) {
             largest = left;
         }
 
-        if (right < n && arr[right] > arr[largest]) {
+        if (right < n && array[right] > array[largest]) {
             largest = right;
         }
 
         if (largest != i) {
-            int swap = arr[i];
-            arr[i] = arr[largest];
-            arr[largest] = swap;
+            int swap = array[i];
+            array[i] = array[largest];
+            array[largest] = swap;
 
-            heapify(arr, n, largest);
+            heapify(array, n, largest);
         }
     }
-    static void heapSort(int[] arr) {
-        int n = arr.length;
+    static void heapSort(int[] array) {
+        int n = array.length;
 
         for (int i = n / 2 - 1; i >= 0; i--) {
-            heapify(arr, n, i);
+            heapify(array, n, i);
         }
 
         for (int i = n - 1; i > 0; i--) {
 
-            int temp = arr[0];
-            arr[0] = arr[i];
-            arr[i] = temp;
+            int temp = array[0];
+            array[0] = array[i];
+            array[i] = temp;
 
-            heapify(arr, i, 0);
+            heapify(array, i, 0);
         }
     }
 
-    static void printArray(int[] arr) {
-        for (int value : arr) {
+    static void printArray(int[] array) {
+        for (int value : array) {
             System.out.print(value + " ");
         }
         System.out.println();
