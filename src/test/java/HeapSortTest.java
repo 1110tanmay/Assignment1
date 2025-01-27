@@ -10,6 +10,7 @@ public class HeapSortTest {
         int[] expected = {1, 3, 4, 5, 10};
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "The unsorted array should be sorted correctly");
+        System.out.println("Test case passed: Input was an unsorted array. ");
     }
 
     // Case 2: Empty array
@@ -19,6 +20,7 @@ public class HeapSortTest {
         int[] expected = {};
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "An empty array should remain unchanged");
+        System.out.println("Test case passed: Input was an empty array. ");
     }
 
     // Case 3: Single-element array
@@ -28,6 +30,7 @@ public class HeapSortTest {
         int[] expected = {42};
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "A single-element array should remain unchanged");
+        System.out.println("Test case passed: The input was a single element array. ");
     }
 
     // Case 4: Array with duplicate values
@@ -37,6 +40,7 @@ public class HeapSortTest {
         int[] expected = {1, 2, 2, 3, 3};
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "The array with duplicate values should be sorted correctly");
+        System.out.println("Test case passed: The input was an array of duplicate elements. ");
     }
 
     // Case 5: Already sorted array
@@ -46,6 +50,7 @@ public class HeapSortTest {
         int[] expected = {1, 2, 3, 4, 5};
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "An already sorted array should remain unchanged");
+        System.out.println("Test case passed: The input was a sorted array.");
     }
 
     // Case 6: Reverse-sorted array
@@ -55,6 +60,7 @@ public class HeapSortTest {
         int[] expected = {1, 2, 3, 4, 5};
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "A reverse-sorted array should be sorted in ascending order");
+        System.out.println("Test case passed: The input was reverse-sorted array.");
     }
 
     // Case 7: Array with negative numbers
@@ -64,6 +70,7 @@ public class HeapSortTest {
         int[] expected = {-4, -3, -2, -1, 0};
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "The array with negative values should be sorted correctly");
+        System.out.println("Test case passed: The input was a sorted array with negative values.");
     }
 
     // Case 8: Large array
@@ -77,6 +84,7 @@ public class HeapSortTest {
         }
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "A large array should be sorted correctly");
+        System.out.println("Test case passed: The input was a very large array.");
     }
 
     // Case 9: Array with maximum integer values
@@ -86,6 +94,7 @@ public class HeapSortTest {
         int[] expected = {Integer.MIN_VALUE, -1, 0, 1, Integer.MAX_VALUE};
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "The array with max and min int values should be sorted correctly");
+        System.out.println("Test case passed: Input was a array with max and mi int values.");
     }
 
     // Case 10: Null array (Fails)
@@ -94,6 +103,7 @@ public class HeapSortTest {
         assertThrows(NullPointerException.class, () -> {
             HeapSort.heapSort(null); // Null array should throw an exception
         }, "Sorting a null array should throw NullPointerException");
+        System.out.println("Test case passed: input was a null array.");
     }
 
     // Case 11: Array of size 0 but not null
@@ -103,6 +113,7 @@ public class HeapSortTest {
         int[] expected = new int[0];
         HeapSort.heapSort(input);
         assertArrayEquals(expected, input, "An empty array of size 0 should remain unchanged");
+        System.out.println("Test case passed: Input was an empty array.");
     }
 
     // Case 12: Algorithm failure case (Modifying input directly, if any)
@@ -112,6 +123,7 @@ public class HeapSortTest {
         HeapSort.heapSort(input);
         for (int value : input) {
             assertNotNull(value, "All elements must be non-null after sorting");
+            System.out.println("Test case passed: non-null input.");
         }
     }
 }

@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'jacoco' // Add JaCoCo plugin for coverage
 }
 
 repositories {
@@ -12,8 +13,17 @@ dependencies {
 
 test {
     useJUnitPlatform() // Ensure JUnit 5 is used
+    testLogging {
+        events "passed", "skipped", "failed" // Logs test results
+        showStandardStreams = true // Shows System.out.println() output
+    }
+}
+
+jacocoTestReport {
+    dependsOn test // Ensure tests are run before generating the report
     reports {
-        html.required.set(true) // Generate HTML test report
-        junitXml.required.set(true) // Generate JUnit XML test report
+        html.required.set(true) // Generate an HTML report
+        xml.required.set(true)  // Generate an XML report
+        csv.required.set(false) // Disable CSV report
     }
 }

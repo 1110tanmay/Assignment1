@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HeapSortTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-01-27T19:32:17" hostname="tanmays-air.3520.dhcp.asu.edu" time="0.015">
+<testsuite name="HeapSortTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-01-27T20:02:02" hostname="tanmays-air.3520.dhcp.asu.edu" time="0.018">
   <properties/>
-  <testcase name="testHeapSortWithNegativeValues()" classname="HeapSortTest" time="0.007"/>
+  <testcase name="testHeapSortWithNegativeValues()" classname="HeapSortTest" time="0.009"/>
   <testcase name="testHeapSortWithLargeArray()" classname="HeapSortTest" time="0.001"/>
   <testcase name="testHeapSortEdgeCaseWithZeroSizedArray()" classname="HeapSortTest" time="0.001"/>
   <testcase name="testHeapSortWithReverseSortedArray()" classname="HeapSortTest" time="0.0"/>
@@ -11,8 +11,24 @@
   <testcase name="testHeapSortWithSingleElementArray()" classname="HeapSortTest" time="0.001"/>
   <testcase name="testHeapSortWithDuplicateValues()" classname="HeapSortTest" time="0.0"/>
   <testcase name="testHeapSortWithNullArray()" classname="HeapSortTest" time="0.001"/>
-  <testcase name="testHeapSortWithUnsortedArray()" classname="HeapSortTest" time="0.001"/>
-  <testcase name="testHeapSortAlgorithmIntegrity()" classname="HeapSortTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testHeapSortWithUnsortedArray()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="testHeapSortAlgorithmIntegrity()" classname="HeapSortTest" time="0.001"/>
+  <system-out><![CDATA[Test case passed: The input was a sorted array with negative values.
+Test case passed: The input was a very large array.
+Test case passed: Input was an empty array.
+Test case passed: The input was reverse-sorted array.
+Test case passed: Input was a array with max and mi int values.
+Test case passed: Input was an empty array. 
+Test case passed: The input was a sorted array.
+Test case passed: The input was a single element array. 
+Test case passed: The input was an array of duplicate elements. 
+Test case passed: input was a null array.
+Test case passed: Input was an unsorted array. 
+Test case passed: non-null input.
+Test case passed: non-null input.
+Test case passed: non-null input.
+Test case passed: non-null input.
+Test case passed: non-null input.
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
