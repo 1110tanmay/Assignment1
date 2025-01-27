@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HeapSortTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-01-27T02:06:02" hostname="tanmays-air.3520.dhcp.asu.edu" time="0.013">
+  <properties/>
+  <testcase name="testHeapSortWithNegativeValues()" classname="HeapSortTest" time="0.005"/>
+  <testcase name="testHeapSortWithLargeArray()" classname="HeapSortTest" time="0.001"/>
+  <testcase name="testHeapSortWithReverseSortedArray()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="testHeapSortWithEmptyArray()" classname="HeapSortTest" time="0.001"/>
+  <testcase name="testHeapSortWithAlreadySortedArray()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="testHeapSortWithSingleElementArray()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="testHeapSortWithDuplicateValues()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="testHeapSortWithUnsortedArray()" classname="HeapSortTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

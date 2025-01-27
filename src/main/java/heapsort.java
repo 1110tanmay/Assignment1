@@ -20,7 +20,7 @@ public class HeapSort {
             heapify(array, n, largest);
         }
     }
-    static void heapSort(int[] array) {
+    public static void heapSort(int[] array) {
         int n = array.length;
 
         for (int i = n / 2 - 1; i >= 0; i--) {
