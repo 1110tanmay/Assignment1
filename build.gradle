@@ -12,4 +12,8 @@ dependencies {
 
 test {
     useJUnitPlatform() // Ensure JUnit 5 is used
+    reports {
+        html.required.set(true) // Generate HTML test report
+        junitXml.required.set(true) // Generate JUnit XML test report
+    }
 }
