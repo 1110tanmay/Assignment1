@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HeapSortTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-01-27T20:02:02" hostname="tanmays-air.3520.dhcp.asu.edu" time="0.018">
+<testsuite name="HeapSortTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2025-01-28T06:03:22" hostname="tanmays-air.3520.dhcp.asu.edu" time="0.021">
   <properties/>
   <testcase name="testHeapSortWithNegativeValues()" classname="HeapSortTest" time="0.009"/>
   <testcase name="testHeapSortWithLargeArray()" classname="HeapSortTest" time="0.001"/>
   <testcase name="testHeapSortEdgeCaseWithZeroSizedArray()" classname="HeapSortTest" time="0.001"/>
   <testcase name="testHeapSortWithReverseSortedArray()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="zeroIn()" classname="HeapSortTest" time="0.001"/>
+  <testcase name="duplicateIn()" classname="HeapSortTest" time="0.0"/>
   <testcase name="testHeapSortWithMaxIntValues()" classname="HeapSortTest" time="0.0"/>
-  <testcase name="testHeapSortWithEmptyArray()" classname="HeapSortTest" time="0.001"/>
+  <testcase name="largeIn()" classname="HeapSortTest" time="0.001"/>
+  <testcase name="testHeapSortWithEmptyArray()" classname="HeapSortTest" time="0.0"/>
   <testcase name="testHeapSortWithAlreadySortedArray()" classname="HeapSortTest" time="0.0"/>
-  <testcase name="testHeapSortWithSingleElementArray()" classname="HeapSortTest" time="0.001"/>
-  <testcase name="testHeapSortWithDuplicateValues()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="negativeIn()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="testHeapSortWithSingleElementArray()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="posNegIn()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="testHeapSortWithDuplicateValues()" classname="HeapSortTest" time="0.001"/>
   <testcase name="testHeapSortWithNullArray()" classname="HeapSortTest" time="0.001"/>
-  <testcase name="testHeapSortWithUnsortedArray()" classname="HeapSortTest" time="0.0"/>
+  <testcase name="testHeapSortWithUnsortedArray()" classname="HeapSortTest" time="0.001"/>
+  <testcase name="twoValIn()" classname="HeapSortTest" time="0.0"/>
   <testcase name="testHeapSortAlgorithmIntegrity()" classname="HeapSortTest" time="0.001"/>
   <system-out><![CDATA[Test case passed: The input was a sorted array with negative values.
 Test case passed: The input was a very large array.
 Test case passed: Input was an empty array.
 Test case passed: The input was reverse-sorted array.
+Test case passed: All zeros as the input. (Later added test case)
+Test case passed: The input has multiple duplicates. (Later added test case)
 Test case passed: Input was a array with max and mi int values.
+Test case passed: Very large inputs, both positive and negative. (Later added test case)
 Test case passed: Input was an empty array. 
 Test case passed: The input was a sorted array.
+Test case passed: Input has single negative value. (Later added test case)
 Test case passed: The input was a single element array. 
+Test case passed: The input has equal negative and positive numbers. (Later added test case)
 Test case passed: The input was an array of duplicate elements. 
 Test case passed: input was a null array.
 Test case passed: Input was an unsorted array. 
+Test case passed: Only two values as input. (Later added test case)
 Test case passed: non-null input.
 Test case passed: non-null input.
 Test case passed: non-null input.

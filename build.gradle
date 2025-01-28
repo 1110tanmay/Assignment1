@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'jacoco' // Add JaCoCo plugin for coverage
+    id 'jacoco' // JaCoCo plugin for code coverage
 }
 
 repositories {
@@ -12,18 +12,18 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform() // Ensure JUnit 5 is used
+    useJUnitPlatform() // Use JUnit 5
     testLogging {
-        events "passed", "skipped", "failed" // Logs test results
-        showStandardStreams = true // Shows System.out.println() output
+        events "passed", "skipped", "failed" // Log test results
+        showStandardStreams = true // Show System.out.println() output
     }
 }
 
 jacocoTestReport {
     dependsOn test // Ensure tests are run before generating the report
     reports {
-        html.required.set(true) // Generate an HTML report
-        xml.required.set(true)  // Generate an XML report
-        csv.required.set(false) // Disable CSV report
+        xml.required.set(true)  // Enable XML report (e.g., for CI tools)
+        html.required.set(true) // Enable HTML report for easier visualization
+        csv.required.set(false) // Disable CSV report if not needed
     }
 }

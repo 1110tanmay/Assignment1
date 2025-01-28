@@ -126,4 +126,60 @@ public class HeapSortTest {
             System.out.println("Test case passed: non-null input.");
         }
     }
+
+    //NEwly added cases to increase code coverage
+
+    @Test
+    public void zeroIn(){
+        int[] input = {0, 0, 0, 0, 0};
+        int[] expected = {0, 0, 0, 0, 0};
+        HeapSort.heapSort(input);
+        assertArrayEquals(expected, input, "An array with all zeros should remain unchanged.");
+        System.out.println("Test case passed: All zeros as the input. (Later added test case)");
+    }
+
+    @Test
+    public void negativeIn() {
+        int[] input = {5, 3, -1, 4, 2};
+        int[] expected = {-1, 2, 3, 4, 5};
+        HeapSort.heapSort(input);
+        assertArrayEquals(expected, input, "An array with a single negative value should be sorted correctly.");
+        System.out.println("Test case passed: Input has single negative value. (Later added test case)");
+    }
+
+    @Test
+    public void posNegIn() {
+    int[] input = {-5, 3, -2, 4, 0, -1};
+    int[] expected = {-5, -2, -1, 0, 3, 4};
+    HeapSort.heapSort(input);
+    assertArrayEquals(expected, input, "The array with mixed positive and negative values should be sorted correctly.");
+    System.out.println("Test case passed: The input has equal negative and positive numbers. (Later added test case)");
 }
+   @Test
+    public void duplicateIn() {
+    int[] input = {5, 5, 5, 1, 1, 1, 3, 3, 3};
+    int[] expected = {1, 1, 1, 3, 3, 3, 5, 5, 5};
+    HeapSort.heapSort(input);
+    assertArrayEquals(expected, input, "The array with a large number of duplicates should be sorted correctly.");
+    System.out.println("Test case passed: The input has multiple duplicates. (Later added test case)");
+}
+
+    @Test
+    public void twoValIn() {
+    int[] input = {9, 3};
+    int[] expected = {3, 9};
+    HeapSort.heapSort(input);
+    assertArrayEquals(expected, input, "An array with two elements should be sorted correctly");
+    System.out.println("Test case passed: Only two values as input. (Later added test case)");
+}
+
+    @Test
+    public void largeIn() {
+    int[] input = {-1000000, 999999, 0, -1, 1};
+    int[] expected = {-1000000, -1, 0, 1, 999999};
+    HeapSort.heapSort(input);
+    assertArrayEquals(expected, input, "An array with large negative and positive values should be sorted correctly");
+    System.out.println("Test case passed: Very large inputs, both positive and negative. (Later added test case)");
+}
+}
+
