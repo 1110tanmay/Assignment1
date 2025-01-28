@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HeapSortTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-28T07:04:07" hostname="tanmays-air.3520.dhcp.asu.edu" time="0.012">
+<testsuite name="HeapSortTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-28T07:20:42" hostname="tanmays-air.3520.dhcp.asu.edu" time="0.01">
   <properties/>
-  <testcase name="posNegIn()" classname="HeapSortTest" time="0.012"/>
-  <system-out><![CDATA[Test case passed: The input has equal negative and positive numbers. (Later added test case)
+  <testcase name="largeIn()" classname="HeapSortTest" time="0.01"/>
+  <system-out><![CDATA[Test case passed: Very large inputs, both positive and negative. (Later added test case)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
