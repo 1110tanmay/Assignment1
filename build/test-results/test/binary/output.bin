@@ -1,23 +1,1 @@
-ETest case passed: The input was a sorted array with negative values.
-4Test case passed: The input was a very large array.
-,Test case passed: Input was an empty array.
-6Test case passed: The input was reverse-sorted array.
-BTest case passed: All zeros as the input. (Later added test case)
-MTest case passed: The input has multiple duplicates. (Later added test case)
-@Test case passed: Input was a array with max and mi int values.
-	YTest case passed: Very large inputs, both positive and negative. (Later added test case)
-
--Test case passed: Input was an empty array. 
-0Test case passed: The input was a sorted array.
-KTest case passed: Input has single negative value. (Later added test case)
-9Test case passed: The input was a single element array. 
-]Test case passed: The input has equal negative and positive numbers. (Later added test case)
-ATest case passed: The input was an array of duplicate elements. 
-*Test case passed: input was a null array.
-0Test case passed: Input was an unsorted array. 
-DTest case passed: Only two values as input. (Later added test case)
-"Test case passed: non-null input.
-"Test case passed: non-null input.
-"Test case passed: non-null input.
-"Test case passed: non-null input.
-"Test case passed: non-null input.
+]Test case passed: The input has equal negative and positive numbers. (Later added test case)
